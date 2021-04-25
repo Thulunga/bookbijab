@@ -5,7 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
 
-ENV = 'production'
+ENV = 'env'
 
 
 if ENV == 'dev':
@@ -15,7 +15,7 @@ if ENV == 'dev':
     
 else: 
     app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://cxeskibdjfkdvw:2da2284a16445fceedf43265fd763d7d0513e97d2ba55ad55b9e4a76001d060b@ec2-54-224-120-186.compute-1.amazonaws.com:5432/deqnvqrhs0sbg2'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://gclvverlpkcsrr:f80a78070fcc2ebce6e03ebd00c2bc71dbfb12771066bf851adde21f040fc4ae@ec2-54-224-120-186.compute-1.amazonaws.com:5432/dcgq70g7jok1j0'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
