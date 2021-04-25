@@ -1,4 +1,4 @@
-env
-__pychace__
-.git
-.vscode
+.env
+__pycache__/
+env/
+.gitignore
