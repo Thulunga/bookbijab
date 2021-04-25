@@ -5,17 +5,17 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
 
-ENV = 'prod'
+ENV = 'production'
 
 
 if ENV == 'dev':
     app.debug = True
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:user123/book_server'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://user3:user123@localhost:5432/book'
     
     
 else: 
     app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://wzuubfmfvhgyjb:a48e0c4ebe66f37e020a436c177f99a863ac1e9650a04012d1acf3bd5d7cc86e@ec2-18-214-140-149.compute-1.amazonaws.com:5432/dba09fq30p8n1u'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://cxeskibdjfkdvw:2da2284a16445fceedf43265fd763d7d0513e97d2ba55ad55b9e4a76001d060b@ec2-54-224-120-186.compute-1.amazonaws.com:5432/deqnvqrhs0sbg2'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
